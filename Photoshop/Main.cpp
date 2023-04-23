@@ -56,8 +56,8 @@ void MedianFilterSerial(Image& image)
 	Image copy = image;
 
 	constexpr uint diameter = 7;
-	for (int x = 0; x < w; x++)
-		for (int y = 0; y < h; y++)
+	for (int x = 0; x < h; x++)
+		for (int y = 0; y < w; y++)
 		{
 			constexpr uint size = diameter * diameter;
 			byte r[size];
@@ -74,8 +74,8 @@ void MedianFilterSerial(Image& image)
 					int x1 = x + ri;
 					int y1 = y + rj;
 
-					x1 = clamp(x1, 0, w - 1);
-					y1 = clamp(y1, 0, h - 1);
+					x1 = clamp(x1, 0, h - 1);
+					y1 = clamp(y1, 0, w - 1);
 
 					int coords = y1 * w * 4 + x1 * 4;
 					r[k] = copy.data[coords + 0];
