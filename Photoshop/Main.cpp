@@ -30,12 +30,11 @@ void SaveImage(const Image& image, const std::string& filename)
 
 void NegateSerial(Image& image)
 {
-	for (size_t i = 0u; i < image.data.size(); i++)
+	for (size_t i = 0u; i < image.data.size(); i+4)
 	{
-		if ((i + 1) % 4 != 0)
-		{
-			image.data[i] = 255 - image.data[i];
-		}
+		image.data[i] = 255 - image.data[i];
+		image.data[i + 1] = 255 - image.data[i + 1];
+		image.data[i + 2] = 255 - image.data[i + 2];
 	}
 }
 
