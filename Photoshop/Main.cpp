@@ -66,6 +66,7 @@ void MedianFilterSerial(Image& image)
 
 			uint k = 0;
 			for (int i = 0; i < diameter; i++)
+			{
 				for (int j = 0; j < diameter; j++)
 				{
 					int ri = i - (diameter / 2);
@@ -83,7 +84,7 @@ void MedianFilterSerial(Image& image)
 					b[k] = copy.data[coords + 2];
 					k++;
 				}
-
+			}
 			std::sort(r, r + size);
 			std::sort(g, g + size);
 			std::sort(b, b + size);
