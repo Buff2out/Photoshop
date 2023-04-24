@@ -8,7 +8,6 @@
 .vs/Photoshop/v16/Browse.VC.opendb
 .vs/Photoshop/v16/Browse.VC.db-wal
 .vs/Photoshop/v16/Browse.VC.db-shm
-Photoshop.sln
 Photoshop/Debug/Photoshop.ilk
 Photoshop/Debug/Photoshop.tlog/CL.command.1.tlog
 Photoshop/Debug/Photoshop.tlog/CL.read.1.tlog
@@ -17,8 +16,6 @@ Photoshop/Debug/Photoshop.tlog/link.command.1.tlog
 *.tlog
 Photoshop/Debug/vc142.idb
 Photoshop/Debug/vc142.pdb
-Photoshop/Photoshop.vcxproj
-Photoshop/Photoshop.vcxproj.filters
 Photoshop/Photoshop.vcxproj.user
 Photoshop/Release/lodepng.obj
 Photoshop/Release/Main.obj
@@ -43,3 +40,5 @@ Photoshop/Debug/lodepng.obj
 Photoshop/Debug/Main.obj
 Debug/Photoshop.pdb
 Debug/Photoshop.exe
+.vs/Photoshop/v16/ipch/AutoPCH/3bfa28ee5809e0d/LODEPNG.ipch
+.vs/Photoshop/v16/ipch/AutoPCH/b052d26013bd89e6/MAIN.ipch
